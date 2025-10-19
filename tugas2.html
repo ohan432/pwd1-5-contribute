@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absensi Mahasiswa Teknik Informatika</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Absensi Mahasiswa Teknik Informatika</h2>
+
+    <table align="center">
+        <tr>
+            <th rowspan="2">NO</th>
+            <th rowspan="2">NPM</th>
+            <th rowspan="2">NAMA</th>
+            <th colspan="7">PERTEMUAN</th>
+        </tr>
+        <tr>
+            <th>1 (Feb 9)</th>
+            <th>2 (Feb 16)</th>
+            <th>3 (Feb 23)</th>
+            <th>4 (Mar 2)</th>
+            <th>5 (Mar 9)</th>
+            <th>6 (Mar 16)</th>
+            <th>7 (Mar 23)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>1234567891</td>
+            <td>Nyah Husna</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>1234567892</td>
+            <td>Leon Oliveira</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>1234567893</td>
+            <td>Vino Hartawan</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+<h2>Form Mahasiswa</h2>
+
+    <form>
+        <fieldset>
+            <legend><strong>Data Mahasiswa</strong></legend>
+            Nama: <input type="text" name="nama"><br><br>
+            NPM: <input type="text" name="npm"><br><br>
+            Kelas: <input type="text" name="kelas"><br><br>
+            Jenis Kelamin:
+            <input type="radio" name="jk" value="Pria">Pria
+            <input type="radio" name="jk" value="Wanita">Wanita
+        </fieldset>
+<br>
+
+        <fieldset>
+            <legend><strong>Tempat Tinggal Mahasiswa</strong></legend>
+            Alamat:<br>
+            <textarea name="alamat" rows="4" cols="40"></textarea><br><br>
+
+            Kecamatan: <input type="text" name="kecamatan"><br><br>
+            Kabupaten/Kotamadya: <input type="text" name="kabupaten"><br><br>
+            Provinsi: <input type="text" name="provinsi"><br><br>
+            Kode Pos: <input type="text" name="kodepos"><br>
+        </fieldset>
+<br>
+
+        <fieldset>
+            <legend><strong>Lain-lainnya</strong></legend>
+
+            Bahasa Pemrograman:<br>
+            <input type="checkbox" name="bahasa" value="C"> C/C++ 
+            <input type="checkbox" name="bahasa" value="Go"> Go Lang 
+            <input type="checkbox" name="bahasa" value="Python"> Python 
+            <input type="checkbox" name="bahasa" value="Lainnya"> Lainnya 
+            <input type="checkbox" name="bahasa" value="PHP"> PHP 
+            <input type="checkbox" name="bahasa" value="JavaScript"> JavaScript 
+ <input type="checkbox" name="bahasa" value="Ruby"> Ruby 
+
+            <br><br>
+
+            Kegiatan:<br>
+            <input type="checkbox" name="kegiatan" value="Organisasi Kemahasiswaan"> Organisasi Kemahasiswaan 
+            <input type="checkbox" name="kegiatan" value="Bidang Olahraga"> Bidang Olahraga 
+            <input type="checkbox" name="kegiatan" value="Lainnya"> Lainnya 
+            <input type="checkbox" name="kegiatan" value="Organisasi Luar Kampus"> Organisasi di Luar Kampus 
+            <input type="checkbox" name="kegiatan" value="Bidang Seni"> Bidang Seni
+        </fieldset>
+
+        <br>
+ <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
